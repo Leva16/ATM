@@ -15,6 +15,14 @@ public class Atm {
         map.put(200, 11);
         map.put(500, 7);
         atm.setDispenser(map);
-        System.out.println(atm.atmSum());
+        //System.out.println(atm.atmSum());
+        ReadPropertiesFile readPropertiesFile = new ReadPropertiesFile();
+        try {
+            System.out.println(readPropertiesFile.getPropValues());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 }
